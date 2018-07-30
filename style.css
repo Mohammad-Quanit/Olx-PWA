@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('http://fonts.googleapis.com/css?family=Fjalla+One');
+@import url('http://fonts.googleapis.com/css?family=Gudea');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+#top-div{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+button#account-Btn{
+    margin-right: 11%;
+    min-height: 40px;
+    margin-top: 2.6%;
+    /* float: right; */
+}
+
+
+
+
+button#ad-Btn{
+    margin-right: 0.5%;
+    margin-top: 2.5%;
+    /* float: right; */
+}
+
+button#log-out{
+    margin-right: 23%;
+    margin-top: 2.5%;
+    margin-top: 5px
+}
+#slogan{
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+    button#account-Btn{
+        width: 15%;      
+        font-size: 15px;
+        padding: 5px;
+        margin-right: 17%;
+        margin-top: 30px;
+        min-height: 15px;
+    }
+    
+    button#ad-Btn{
+        width: 15%;
+        font-size: 15px;
+        padding: 5px;
+        margin-right: 0.5%;
+        margin-top: 30px;
+    }
+    button#log-out{
+        width: 7%;
+        font-size: 10px;
+        margin-right: 32.5%;
+        margin-top: -2px;
+        
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #slogan{
+        font-size: 12px;
+    }
+    button#account-Btn{
+        width: 15%;      
+        font-size: 10px;
+        margin-right: 17%;
+        margin-top: 30px;
+    }
+    
+    button#ad-Btn{
+        width: 15%;
+        font-size: 10px;
+        margin-right: 0.5%;
+        margin-top: 30px;
+        min-height: 30px;
+    }
+    button#log-out{
+        width: 10%;
+        font-size: 10px;
+        margin-right: 32.5%;
+        margin-top: -2px;
+        
+    }
+    #signup-Div, #signIn-Div{
+        margin-top: 0px;
+        width: 80%;
+        /* height: 80%; */
+    }
+    label.w3-margin{
+        width: 100%;
+    }
+    #categ-div > a > img.w3-circle{
+        width: 60px;
+        height: 60px;
+        margin-left: 6%;
+    }
+    #categ-heading{
+        /* text-align: center; */
+        font-family: 'Roboto', sans-serif; 
+    }
+    p#heading{
+        font-size: 10px;
+    }
+    button.msgBtn{
+        width: 50%;
+        font-size: 10px;
+        /* text-align: center; */
+    }
+    #detail-div > img#ad-photo{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #form-div{
+        height: 30px;
+    }
+    .main-logo{
+        width: 40px;
+        height: 40px;
+    }
+    #slogan{
+        font-size: 8px;
+    }
+    button#account-Btn{
+        width: 12;      
+        font-size: 10px;
+        /* padding: 5px; */
+        margin-right: 17%;
+        margin-top: 15px;
+    }
+    
+    
+    button#ad-Btn{
+        width: 12;
+        font-size: 10px;
+        padding: 5px;
+        margin-right: 0.5%;
+        margin-top: 15px;
+    }
+
+    button#log-out{
+        width: 12;
+        font-size: 10px;
+        padding: 5px;
+        margin-right: 33%;
+        margin-top: 0px;
+    }
+    #search-Btn{
+        /* margin-left: 15%; */
+        margin-right: 3%;
+        text-align: center;
+        padding: 5px;
+        height: 35px;
+        font-size: 10px;
+    }
+
+    div > form > #city-input{
+        height: 30px;
+        width: 26%;
+    }
+    div > form > #ad-input{
+        width: 40%;
+        height: 30px;
+        /* margin-right: 50px; */
+    }
+    #signup-Div, #signIn-Div{
+        margin-top: 0px;
+        width: 80%;
+        /* height: 80%; */
+    }
+    label.w3-margin{
+        width: 100%;
+    }    
+    #submit-form-div > #form > label > #ad-title, label > #categories, label > #ad-desc, label > #ad-owner-name, label > #ad-owner-phone, label > #ad-owner-city, label > #ad-owner-amnt{
+        width: 200%;
+    }
+    div > form > #ad-submit{
+        width: 90%;
+    }
+    #categ-div > a > img.w3-circle{
+        width: 40px;
+        height: 40px;
+        margin-left: 5%;
+    }
+    #categ-heading{
+        /* text-align: center; */
+        font-family: 'Roboto', sans-serif; 
+    }
+
+    p#heading{
+        font-size: 15px;
+    }
+    #heading-content{
+        font-size: 5px;
+    }
+
+    button.msgBtn{
+        width: 100%;
+        font-size: 15px;
+        /* text-align: center; */
+    }
+
+    #number{
+        width: 100%;
+        font-size: 10px;
+    }
+    div#results-div > div#detail-div > img#ad-photo{
+        /* width: 20%; */
+        max-height: 200px;
+    }
+    #title{
+        text-align: center;
+        font-size: 20px;
+    }
+    div#detail-div > div#sub-div > #number, #time, #price, #owner, #description, #categorie{
+        font-size: 5px;
+        margin: 0px;
+    }
+
+    #results-div > #detail-div > #myCarousel{
+        min-width: 100%;
+    }
+}
+#city-input{
+    width: 22%;
+    float: left;
+}
+#ad-input{
+    width: 50%;
+    margin-left: 60px;
+}
+#form-div{
+    height: 70px;
+    border-radius: 5px;
+}
+#search-Btn{
+    width: 20%;
+    margin-right: 1%;
+}
+
+#signip-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    /* width: 50%; */
+}
+#signUp-form{
+    /* margin-top: 15%; */
+    width: 50%;
+    /* background-color: transparent; */
+}
+#signIn-Div{
+    margin-top: 3%;
+}
+#signup-Div{
+    margin-top: 3%;
+}
+#submit-form-div{
+    width: 95%;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+hr.sub-form{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0; 
+    margin: 10px
+}
+label.w3-margin{
+    width: 40%;
+}
+#ad-title, #ad-owner-name, #ad-owner-phone, #categories{
+    width: 100%;
+}
+#ad-submit{
+    /* float: left; */
+    width: 20%;
+}
+img.w3-circle{
+    width: 8%;
+    height: 8%;
+    margin-left: 10%;
+    margin-top: 10px;
+    cursor: pointer;
+}
+/* #categ-div{
+     text-align: center; 
+} */
+#categ-heading{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* results page styling */
+#results-div{
+    /* overflow-y: hidden; */
+}
+
+
+
+/* // footer styling */
+
+@import url(http://fonts.googleapis.com/css?family=Fjalla+One);
+@import url(http://fonts.googleapis.com/css?family=Gudea);
+.footer1 {
+    background: #fff ;
+	padding-top: 40px;
+	padding-right: 0;
+	padding-bottom: 20px;
+	padding-left: 0;/*	border-top-width: 4px;
+	border-top-style: solid;
+	border-top-color: #003;*/
+}
+
+
+
+.title-widget {
+	color: #898989;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 1;
+	position: relative;
+	text-transform: uppercase;
+	font-family: 'Fjalla One', sans-serif;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 25px;
+	margin-left: 0;
+	padding-left: 28px;
+}
+
+.title-widget::before {
+    background-color: #ea5644;
+    content: "";
+    height: 22px;
+    left: 0px;
+    position: absolute;
+    top: -2px;
+    width: 5px;
+}
+
+
+
+.widget_nav_menu ul {
+    list-style: outside none none;
+    padding-left: 0;
+}
+
+.widget_archive ul li {
+    background-color: rgba(0, 0, 0, 0.3);
+    content: "";
+    height: 3px;
+    left: 0;
+    position: absolute;
+    top: 7px;
+    width: 3px;
+}
+
+
+.widget_nav_menu ul li {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 20px;
+	position: relative;
+    text-transform: uppercase;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    margin-bottom: 7px;
+    padding-bottom: 7px;
+	width:95%;
+}
+
+
+
+.title-median {
+    color: #636363;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0 0 15px;
+    text-transform: uppercase;
+	font-family: 'Fjalla One', sans-serif;
+}
+
+.footerp p {font-family: 'Gudea', sans-serif; }
+
+
+#social:hover {
+    			-webkit-transform:scale(1.1); 
+-moz-transform:scale(1.1); 
+-o-transform:scale(1.1); 
+			}
+			#social {
+				-webkit-transform:scale(0.8);
+                /* Browser Variations: */
+-moz-transform:scale(0.8);
+-o-transform:scale(0.8); 
+-webkit-transition-duration: 0.5s; 
+-moz-transition-duration: 0.5s;
+-o-transition-duration: 0.5s;
+			}           
+/* 
+    Only Needed in Multi-Coloured Variation 
+                                               */
+			.social-fb:hover {
+				color: #3B5998;
+			}
+			.social-tw:hover {
+				color: #4099FF;
+			}
+			.social-gp:hover {
+				color: #d34836;
+			}
+			.social-em:hover {
+				color: #f39c12;
+			}
+			.nomargin { margin:0px; padding:0px;}
+
+
+
+
+
+.footer-bottom {
+    background-color: #15224f;
+    min-height: 30px;
+    width: 100%;
+}
+.copyright {
+    color: black;
+    line-height: 30px;
+    min-height: 30px;
+    padding: 7px 0;
+}
+.design {
+    color: black;
+    line-height: 30px;
+    min-height: 30px;
+    padding: 7px 0;
+    text-align: right;
+}
+.design a {
+    color: black;
+}

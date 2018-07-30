@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- bootstrap files -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- w3 framework -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/favicon.ico" />
+    <link rel="manifest" href="./manifest.json">
+    <title>Create New Account For Olx</title>
+</head>
+
+<body>
+    <!-- main div -->
+    <div id="top-div" class="container-fluid w3-display-container w3-padding" style="height: 100%;">
+
+        <!-- navigation work -->
+        <a href="index.html">
+            <img src="images/logo.png" alt="olx logo" class="main-logo">
+        </a>
+        <span id="slogan" class="w3-right-align">Pakistan's Largest MarketPlace</span>
+        <a id="log-out-link" href="">
+            <button class="w3-hover-text-red w3-hover-white w3-button w3-border w3-border-grey w3-round-large w3-display-right" id="log-out">Log out</button>
+        </a>
+        <a href="signIn.html">
+            <button id="account-Btn" class="w3-button w3-border w3-border-grey w3-round-large w3-display-topright w3-text-teal w3-hover-white w3-hover-text-orange">
+                <span class="glyphicon glyphicon-user"></span>&nbsp;My Account</button>
+        </a>
+        <a href="posting.html">
+            <button id="ad-Btn" class="w3-button w3-border w3-border-lime w3-round-large w3-display-topright w3-lime w3-hover-orange w3-hover-opacity w3-text-white w3-hover-text-white">Submit an Ad</button>
+        </a>
+    </div>
+
+    <!-- sign up div -->
+    <div id="signup-Div" class="w3-container w3-display-middle ">
+        <form id="signup-form" class="w3-card-4 w3-padding w3-white w3-round-xlarge" method="POST">
+            <img class="w3-margin-top" src="images/signup.png" width="40%" id="signip-img" />
+            <p>
+                <input class="w3-input w3-transparent" type="text" placeholder="Enter Name" name="name" id="name" autocomplete="name">
+            </p>
+            <p>
+                <input class="w3-input w3-transparent" type="email" placeholder="Enter Email" name="email" id="email" autocomplete="email">
+            </p>
+            <p>
+                <input class="w3-input w3-transparent" type="password" placeholder="Enter Password" name="password" id="pwd" autocomplete="current-password">
+            </p>
+            <p>
+                <button id="signUp-Btn" class="w3-button w3-lime w3-round-xlarge w3-hover-opacity w3-hover-green">
+                    Create </button>
+            </p>
+            <!-- <hr id="hr"> -->
+            <p class="w3-tiny">
+                Already Have an Account
+                <a href="signIn.html" style="color: cornflowerblue">Click Here to Sign In</a>
+            </p>
+        </form>
+    </div>
+</body>
+<!-- firebase files -->
+<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-firestore.js"></script>
+
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyCqfBjzrk8tMNNItQmO9RMDlhYz0Ihq9wM",
+        authDomain: "olx-app-db.firebaseapp.com",
+        databaseURL: "https://olx-app-db.firebaseio.com",
+        projectId: "olx-app-db",
+        storageBucket: "olx-app-db.appspot.com",
+        messagingSenderId: "1029851771847"
+    };
+    firebase.initializeApp(config);
+    const db = firebase.firestore();
+    db.settings({ timestampsInSnapshots: true });
+
+
+</script>
+<script src="signUp.js"></script>
+<script src="logout.js"></script>
+
+</html>

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- bootstrap files -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- w3 framework -->
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="../style.css">
+	<link rel="icon" href="../images/favicon.ico" />
+	<link rel="manifest" href="../manifest.json">
+	<title>All Services - Results</title>
+</head>
+
+<body onload="showAdsByCategory('services')">
+
+	<!-- main div -->
+	<div id="top-div" style="margin-bottom: 20px" class="container-fluid w3-display-container w3-padding w3-transparent" style="height: 100%;">
+
+		<!-- navigation work -->
+		<a href="../index.html">
+			<img src="../images/logo.png" alt="olx logo" class="main-logo">
+		</a>
+		<span id="slogan" class="w3-right-align">Pakistan's Largest MarketPlace</span>
+
+		<a id="log-out-link" href="">
+			<button class="w3-hover-text-red w3-hover-white w3-button w3-border w3-border-grey w3-round-large w3-display-right" id="log-out">Log out</button>
+		</a>
+
+		<a href="../signIn.html">
+			<button id="account-Btn" class="w3-button w3-border w3-border-grey w3-round-large w3-display-topright w3-text-teal w3-hover-white w3-hover-text-orange">
+				<span class="glyphicon glyphicon-user"></span>&nbsp;My Account</button>
+		</a>
+
+
+		<a href="../posting.html">
+			<button id="ad-Btn" class="w3-button w3-border w3-border-lime-green w3-round-large w3-display-topright w3-lime w3-hover-orange w3-hover-opacity w3-text-white w3-hover-text-white">Submit an Ad</button>
+		</a>
+	</div>
+
+	<div class="w3-border w3-round-large w3-card-4" style="margin: 10px; padding-bottom: 30px;">
+
+		<div id="form-div" style="opacity: 0.8;" class="w3-lime w3-display-container w3-margin">
+
+			<select class="w3-input w3-white w3-border w3-round w3-display-left w3-margin-left" name="city" id="city-input">
+				<option value="Karachi">Karachi</option>
+				<option value="Islamabad">Islamabad</option>
+				<option value="Lahore">Lahore</option>
+				<option value="Peshawar">Peshawar</option>
+				<option value="Rawalpindi">Rawalpindi</option>
+				<option value="Bahawalpur">Bahawalpur</option>
+				<option value="Hyderabad">Hyderabad</option>
+				<option value="Sialkot">Sialkot</option>
+			</select>
+			<!-- <input placeholder="Enter City" type="search" class="w3-input w3-border w3-round w3-display-left w3-margin-left" name="city" id="city-input">  -->
+			<input placeholder="Enter your desired ad" type="search" class="w3-input w3-border w3-round w3-display-middle w3-margin-left w3-text-black"
+			 name="ad" id="ad-input">
+			<button id="search-Btn" class="w3-button w3-margin-left w3-border w3-border-white w3-round-large w3-display-right w3-blue w3-hover-blue w3-text-white w3-hover-text-white">
+				<span class="glyphicon glyphicon-search"></span>&nbsp;&nbsp;Search</button>
+		</div>
+
+		<!-- Results div -->
+		<div id="results-div" class="container-fluid w3-margin w3-row-padding">
+      <p class="w3-xxxlarge w3-serif" align='center'>Showing all Services</p>
+		</div>
+
+		<hr>
+
+		<div class="w3-center">
+			<a href="../chats.html">
+				<button class="w3-button w3-orange w3-text-white">See All Chats</button>
+			</a>
+			&nbsp;
+			<a href="../favourites.html">
+				<button class="w3-button w3-orange w3-text-white">See All Favourites here</button>
+			</a>
+		</div>
+
+	</div>
+	<br>
+	<hr>
+
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+	<!--footer-->
+	<footer class="footer1">
+		<div class="container">
+
+			<div class="row">
+				<!-- row -->
+
+				<div class="col-lg-3 col-md-3">
+					<!-- widgets column left -->
+					<ul class="list-unstyled clear-margins">
+						<!-- widgets -->
+
+						<li class="widget-container widget_nav_menu">
+							<!-- widgets list -->
+
+							<h1 class="title-widget">About Olx PWA</h1>
+
+							<ul>
+								<li>
+									<a href="#">
+										<i class="fa fa-angle-double-right"></i> About Us</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-angle-double-right"></i> Contact Us</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-angle-double-right"></i> Success Stories</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-angle-double-right"></i> Popular Searches</a>
+								</li>
+
+							</ul>
+
+						</li>
+
+					</ul>
+
+
+				</div>
+				<!-- widgets column left end -->
+
+
+
+				<div class="col-lg-3 col-md-3">
+					<!-- widgets column left -->
+
+					<ul class="list-unstyled clear-margins">
+						<!-- widgets -->
+
+						<li class="widget-container widget_nav_menu">
+							<!-- widgets list -->
+
+							<h1 class="title-widget">Terms & Conditions</h1>
+
+							<ul>
+								<li>
+									<a href="#">
+										<i class="fa fa-angle-double-right"></i> Terms Of use</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-angle-double-right"></i> Help & Contact Us</a>
+								</li>
+
+							</ul>
+
+						</li>
+
+					</ul>
+
+
+				</div>
+				<!-- widgets column left end -->
+
+
+
+				<div class="col-lg-3 col-md-3">
+					<!-- widgets column left -->
+
+					<ul class="list-unstyled clear-margins">
+						<!-- widgets -->
+
+						<li class="widget-container widget_nav_menu">
+							<!-- widgets list -->
+
+							<h1 class="title-widget">Olx Member</h1>
+
+							<ul>
+
+
+								<li>
+									<a href="#">
+										<i class="fa fa-angle-double-right"></i> Join Olx</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-angle-double-right"></i> Happy Olxers</a>
+								</li>
+
+
+							</ul>
+
+						</li>
+
+					</ul>
+
+
+				</div>
+				<!-- widgets column left end -->
+
+
+				<div class="col-lg-3 col-md-3">
+					<!-- widgets column center -->
+
+
+
+					<ul class="list-unstyled clear-margins">
+						<!-- widgets -->
+
+						<li class="widget-container widget_recent_news">
+							<!-- widgets list -->
+
+							<h1 class="title-widget">Contact Detail </h1>
+
+							<div class="footerp">
+
+								<h2 class="title-median">Webenlance Pvt. Ltd.</h2>
+								<p>
+									<b>Email id:</b>
+									<a href="mailto:muhammadquanit@gmail.com">muhammadquanit@gmail.com</a>
+								</p>
+								<p>
+									<b>Helpline Numbers </b>
+
+									<b class="w3-text-light-green">(8AM to 10PM):</b> +91-8130890090, +91-8130190010 </p>
+
+								<p>
+									<b>Corp Office / Postal Address</b>
+								</p>
+								<p>
+									<b>Phone Numbers : </b>7042827160, </p>
+								<p> 011-27568832, 9868387223</p>
+							</div>
+
+							<div class="social-icons">
+
+								<ul class="nomargin">
+
+									<a href="https://www.facebook.com/bootsnipp">
+										<i class="fa fa-facebook-square fa-3x social-fb" id="social"></i>
+									</a>
+									<a href="https://twitter.com/bootsnipp">
+										<i class="fa fa-twitter-square fa-3x social-tw" id="social"></i>
+									</a>
+									<a href="https://plus.google.com/+Bootsnipp-page">
+										<i class="fa fa-google-plus-square fa-3x social-gp" id="social"></i>
+									</a>
+									<a href="mailto:bootsnipp@gmail.com">
+										<i class="fa fa-envelope-square fa-3x social-em" id="social"></i>
+									</a>
+
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--header-->
+
+	<div class="footer-bottom w3-lime">
+
+		<div class="container">
+
+			<div class="row">
+
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+					<div class="copyright">
+
+						© 2018, Olx PWA, All rights reserved
+
+					</div>
+
+				</div>
+
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+					<div class="design">
+
+						<a href="#">Olx Pwa</a> |
+						<a target="_blank" href="https://mohammad-quanit.github.io/">Web Design & Development by Mohd Quanit</a>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</body>
+
+<!-- firebase files -->
+
+<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase-messaging.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase-functions.js"></script>
+<script>
+	// Initialize Firebase
+	var config = {
+		apiKey: "AIzaSyCqfBjzrk8tMNNItQmO9RMDlhYz0Ihq9wM",
+		authDomain: "olx-app-db.firebaseapp.com",
+		databaseURL: "https://olx-app-db.firebaseio.com",
+		projectId: "olx-app-db",
+		storageBucket: "olx-app-db.appspot.com",
+		messagingSenderId: "1029851771847"
+	};
+	let app = firebase.initializeApp(config);
+	const db = firebase.firestore();
+	db.settings({ timestampsInSnapshots: true });
+
+
+	firebase.auth().onAuthStateChanged(user => {
+		if (user) {
+			const messaging = firebase.messaging();
+
+			messaging
+				.requestPermission()
+				.then(function () {
+					console.log("Notification permission granted.");
+					return messaging.getToken();
+				})
+				.then(function (token) {
+					// Displaying user token
+					console.log("token >>>> ", token);
+					firebase.firestore().collection("users")
+						.doc(user.uid).update({
+							token: token
+						})
+					// alert('agya')
+				})
+				.catch(function (err) {
+					// Happen if user deney permission
+					console.log("Unable to get permission to notify.", err);
+				});
+
+			if ("serviceWorker" in navigator) {
+				console.log("Service Worker is supported");
+
+				// if service worker supported then register my service worker
+				navigator.serviceWorker
+					.register("../firebase-messaging-sw.js")
+					.then(function (reg) {
+						console.log("Successfully Register :^)", reg);
+
+						reg.pushManager
+							.subscribe({
+								userVisibleOnly: true
+							})
+							.then(function (subscription) {
+								console.log("subscription:", subscription.toJSON());
+								// GCM were used this endpoint
+								console.log("endpoint:", subscription.endpoint);
+							});
+					})
+					.catch(function (error) {
+						console.log("SW Registration Failed: :^(", error);
+					});
+			}
+		}
+	});
+
+
+</script>
+<script src="../categories/categories.js"></script>
+<script src="../app.js"></script>
+<script src="../logout.js"></script>
+
+</html>
